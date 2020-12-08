@@ -7,10 +7,6 @@ import os
 app = Flask(__name__)
 
 
-# SqlAlchemy Database Configuration With Mysql
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://Thesunpaysmarkus:Test1234@35.189.93.25/hierisjoudata'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
